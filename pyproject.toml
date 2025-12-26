@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "licenseme-cli"
+version = "0.1.0"
+description = "Interactive SPDX-based license generator"
+readme = "README.md"
+authors = [{name = "tcsenpai"}]
+license = {file = "LICENSE"}
+requires-python = ">=3.9"
+keywords = ["license", "spdx", "cli"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Build Tools",
+]
+dependencies = []
+
+[project.scripts]
+licenseme = "licenseme_cli.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools.package-data]
+licenseme_cli = ["data/licenses/*.txt"]

@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+"""Convenience wrapper for the licenseme CLI package."""
+from licenseme_cli.cli import main
+
+if __name__ == "__main__":
+    raise SystemExit(main())
