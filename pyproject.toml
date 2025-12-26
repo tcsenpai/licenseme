@@ -9,10 +9,7 @@ description = "Interactive SPDX-based license generator"
 readme = "README.md"
 authors = [{name = "tcsenpai", email = "tcsenpai@discus.sh"}]
 license = {file = "LICENSE"}
-urls = {
-    "Homepage" = "https://github.com/tcsenpai/licenseme",
-    "Source" = "https://github.com/tcsenpai/licenseme"
-}
+urls = {Homepage = "https://github.com/tcsenpai/licenseme", Source = "https://github.com/tcsenpai/licenseme"}
 requires-python = ">=3.9"
 keywords = ["license", "spdx", "cli"]
 classifiers = [
