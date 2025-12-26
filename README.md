@@ -5,13 +5,16 @@ canonical SPDX templates. It prompts for the variable portions (copyright owner,
 program name, etc.), infers defaults from your git config, and can run non-interactively using
 command-line overrides.
 
-## Usage
+## Installation & Usage
 
 ```bash
-./licenseme MIT
-# or after installation
-pip install -e .
+pip install licenseme-cli
+licenseme --list
 licenseme Apache-2.0 --defaults --holder "Jane Doe" --year 2024
+
+# local clone workflow
+./licenseme MIT
+pip install -e .
 ```
 
 Use `licenseme --list` to see all supported identifiers.
